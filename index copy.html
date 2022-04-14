@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/png;base64,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">
+    <title>ABB-Bank</title>
+</head>
+<body>
+    <section class="head-top">
+        <div class="container-fluid ">
+            <div class="row justify-content-between align-items-center">
+                <div class="mobile-left d-none col-3">
+                    <span>Fərdi <i class="fa-solid fa-angle-down"></i></span>
+                </div>
+                <div class="left col-lg-8 ">
+                    <ul class="d-flex align-items-center">
+                        <li>
+                            <a href="">Tender Elanları</a>
+                        </li>
+                        <li>
+                            <a href="">Haqqımızda</a>
+                        </li>
+                        <li>
+                            <a href="">Tariflər</a>
+                        </li>
+                        <li>
+                            <a href="">Xəbərlər</a>
+                        </li>
+                        <li>
+                            <a href="">Xidmət Şəbəkəsi</a>
+                        </li>
+                        <li>
+                            <a href="">Təklif və şikayətlər</a>
+                        </li>
+                        <li>
+                            <a href="">Onlayn Xidmətlər</a>
+                        </li>
+                        <li>
+                            <button>Karyera Portalı</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right col-lg-2 col-6 ">
+                    <ul class="d-flex justify-content-between align-items-center">
+                       <li>
+                            <span  id="search" ><i class="fa-solid fa-magnifying-glass mx-2"></i>Axtarış</span>
+                       </li>
+                       <li>
+                            <span id="language">AZ<i class="fa-solid fa-angle-down "></i></span>
+                       </li>
+                       <li>
+                           <a id="call" href=""><i class="fa-solid fa-phone"></i>937</a>
+                       </li>
+                    </ul>
+                </div>
+               
+            </div>
+        </div>
+        <div id="languages">
+            <ul class="first">
+                <li>
+                <img src="photos/England.svg.png" alt="">
+                EN
+                </li>
+                <li>
+                    <img src="photos/Russia.svg.png" alt="">
+                RU
+                </li>
+            </ul>
+        </div>
+
+
+    </section>
+    <header>
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex left col-lg-5 col-6 align-items-center justify-content-between">
+                    <div class="image">
+                        <img src="https://abb-bank.az/img/abb-30.svg?v=88" alt="">
+                    </div>
+                    <a href="">Fərdi</a><span>/</span>
+                    <a href="">Korporativ</a><span>/</span>
+                    <a href="">KOB</a>
+                </div>
+                <div class="right col-lg-2 col-6 ">
+                    <i class="fa-solid fa-arrow-right"></i>
+                    <a href="">Internet Bankçılıq</a>
+                </div>
+                <i class="fa-solid fa-bars d-none"></i>
+            </div>
+        </div>
+    </header>
+
+    <hr style="margin: 0;">
+
+    <section id="Modal">
+        <div class="container">
+            <div class="all">
+                <div class="top d-flex">
+                    <img src="https://abb-bank.az/img/ibar-about-sticky-logo-new.svg" alt="">
+                    <p>Ən son yeniliklərlə tanış olmaq üçün abunə olun</p>
+                </div>
+                <button id="btn-1">Daha Sonra</button>
+                <button id="btn-2">Abunə Ol</button>
+            </div>
+        </div>
+    </section>
+    <div id="searchBox">
+        <div class="container-fluid justify-content-between">
+            <div class="d-flex align-items-center justify-content-between">
+                <input  type="text" placeholder="Sizə nece kömək edə bilərik ?">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    </div>
+    <div id="mobileMenu">
+        <div class="top">
+            <div class="container-fluid">
+            <i class="fa-solid fa-angle-right"></i><span>Internet Bankçılıq</span>
+            </div>
+        </div>
+        <div class="mid">
+            <div class="container-fluid">
+                <ul class="d-flex align-items-center">
+                    <li><a href="">
+                        Tender Elanları
+                    </a></li>
+                    <li><a href="">
+                        Haqqımızda
+                    </a></li>
+                    <li><a href="">
+                        Tariflər
+                    </a></li>
+                    <li><a href="">
+                        Xəbərlər
+                    </a></li>
+                    <li><a href="">
+                        Xidmət Şəbəkəsi
+                    </a></li>
+                    <li><a href="">
+                        Təklif və şikayətlər
+                    </a></li>
+                    <li><a href="">
+                        Onlayn Xidmətlər
+                    </a></li>
+                    <li><a href="">
+                        Karyera Portalı
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+       
+    <script src="js/main.js"></script>
+</body>
+</html>
